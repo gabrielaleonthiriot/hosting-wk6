@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>weather</title>
+  </head>
+  <body>
+    <div class="box">
+
+        <div class="container">
+            <div class="weather-app">
+              <form class="search-form" id="search-form">
+                <div class="row">
+                  <div class="col-6">
+                    <input
+                      type="search"
+                      placeholder="Type a city.."
+                      autofocus="on"
+                      autocomplete="off"
+                      id="city-input"
+                      class="form-control shadow-sm w-1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="form-control btn btn-primary shadow-sm w-1"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <button
+                      class="btn btn-success w-1"
+                      id="current-location-button"
+                    >
+                      Current
+                    </button>
+                  </div>
+                </div>
+              </form>
+      <h1 id="city"></h1>
+      <h2 id="date"></h2>
+      <h3>
+        <span id="description"></span>
+        <div class="float-center">
+          <span class="temperature" id="temperature"></span
+          > °C 
+        </div>
+      </h3>
+
+      <div class="col-6">
+        <ul style="list-style-type: none;">
+
+          <li>Humidity: <span id="humidity"></span>%</li>
+          <li>Wind: <span id="wind"></span> km/h</li>
+        </ul>
+      </div>
+
+      <div class="grid-container">
+        <div class="icon">⛅</div>
+        <div class="icon">🌤️</div>
+        <div class="icon">☁️</div>
+        <div class="icon">🌥️</div>
+        <div class="icon">☀️</div>
+        <div class="icon">🌧️</div>
+        <div>Mon <br />77° 53°</div>
+        <div>Tue <br />64° 52°</div>
+        <div>Wed <br />63° 55°</div>
+        <div>Thu <br />77° 57°</div>
+        <div>Fri <br />78° 61°</div>
+        <div>Sat <br />88° 71°</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
