@@ -1,0 +1,65 @@
+body {
+  text-align: center;
+  border: 3px solid;
+  border-color: #2196f3;
+  border-style: groove;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px;
+  margin: 200px;
+  border-radius: 50px 50px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 0, 0.5),
+      rgba(0, 0, 255, 0.5)
+    ),
+    url(https://static.vecteezy.com/system/resources/previews/000/063/309/original/weather-icons-vector.jpg);
+}
+h1 {
+  color: darkblue;
+  font-size: 30px;
+  margin-bottom: none;
+}
+h2 {
+  font-weight: bold;
+  font-size: 15px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+p {
+  font-weight: 100;
+}
+.box {
+  background-color: rgb(186, 217, 238);
+  opacity: 0.7;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: 30px 90px;
+  gap: 1px;
+  background-color: #2196f3;
+  padding: 1px 1px 1px 1px;
+  border-radius: 5px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: none;
+  font-size: 16px;
+  color: #151170;
+  border-radius: 5px 5px;
+}
+.col-6 {
+  box-sizing: none;
+  display: block;
+  margin: 0 auto;
+  color: #151170;
+  font-size: 15px;
+  text-align: center;
+  max-width: 35%;
+}
