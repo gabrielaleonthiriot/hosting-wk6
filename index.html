@@ -50,17 +50,19 @@
               </form>
       <h1 id="city"></h1>
       <h2 id="date"></h2>
-      <h3>
+      <h3><img src="" alt="Clear" id="icon" class="float-center" />
+                <div class="float-center"></div>
+                <br/>
         <span id="description"></span>
         <div class="float-center">
-          <span class="temperature" id="temperature"></span
-          > °C 
+        <strong id="temperature"></strong>
+               <span class="units">
+            <a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a></span>
         </div>
       </h3>
-
-      <div class="col-6">
+      <div class="float-center">
         <ul style="list-style-type: none;">
-
           <li>Humidity: <span id="humidity"></span>%</li>
           <li>Wind: <span id="wind"></span> km/h</li>
         </ul>
